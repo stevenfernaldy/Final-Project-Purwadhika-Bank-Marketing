@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+    <style>
+        .a {
+            font-family: Arial, Helvetica, sans-serif;
+            color: black;
+            padding: 30px;
+            font-size: 20px
+        }
+
+        .b{
+            font-family: Arial, Helvetica, sans-serif;
+            color: #4b367b;
+            font-size: 50px;
+            padding: 10px; 
+        }  
+
+        .header {
+            padding: 50px;
+            text-align: left;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #4b367b;
+            color: white;
+        }
+
+        body {
+            background-color: rgb(green);
+            font-family: Segoe UI;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        </style>
+
+</head>
+
+    
+    <body>
+    
+        <div class="header">
+            <h1>The Result</h1>
+        </div>
+
+        <hr>    
+        <div class = "a">
+            <b>Euribor : </b> {{euribor}}<br>
+            <b>Employment Variation Rate : </b> {{var}} <br>
+            <b> Number of Employee : </b> {{employee}} <br>
+            <b>Consumer Price Index : </b> {{cpi}}<br> 
+            <b>Consumer Confidence Index : </b> {{cci}}<br>
+            <b>Age : </b> {{age}}<br>
+            <b>Job : </b> {{job}}<br>
+            <b>Marital : </b> {{marital}}<br>
+            <b>Month: </b> {{month}}<br>
+            <b>Education : </b> {{education}}<br>
+            <b>Default : </b> {{default}}<br>
+            <b>Campaign : </b>{{campaign}}<br>
+            <b>Contact : </b>{{contact}}<br>
+            <b>Poutcome : </b>{{poutcome}}
+        </div>
+
+        <div class = 'b'>
+            <b>RESULT: </b>{{result}}
+        </div>
+
+        <a href="/predict" target="_self" >
+            <button type="submit" class="btn btn-info">
+                PREDICT MORE
+            </button>
+        </a>
+        
+
+
+
+
+    </body>
